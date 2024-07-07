@@ -33,4 +33,5 @@ class CarTest {
         car.move(new Random().nextInt(0,4));
         assertThat(car.getPosition()).isZero();
     }
+
 }
