@@ -1,5 +1,7 @@
 package domain;
 
+import view.ResultView;
+
 import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
@@ -21,7 +23,9 @@ public class RacingGame {
             for (Car car : cars) {
                 car.move(new Random().nextInt(10));
             }
+            ResultView.printPosition(cars);
         }
+        ResultView.printPosition(cars);
     }
 
     public List<Car> getWinners() {
